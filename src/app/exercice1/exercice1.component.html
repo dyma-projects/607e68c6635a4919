@@ -1,0 +1,43 @@
+<h1><u>Exercice 1</u></h1>
+
+<!-- LIAISON SUR UN ATTRIBUT -->
+
+<h2>a)</h2>
+
+<form action="">
+	<section>
+		<label for="name">Nom : </label>
+		<input id="name" [type]="type1" />
+	</section>
+	<section>
+		<label for="birth"> Date de naissance : </label>
+		<input id="birth" [type]="type2" />
+	</section>
+	<section>
+		<label for="age">Âge : </label>
+		<input id="age" [type]="type3" />
+	</section>
+</form>
+
+<!-- LIAISON SUR UN EVENEMENT -->
+
+<h2>b)</h2>
+
+<div
+	class="circle"
+	[style.width]="x"
+	[style.height]="y"
+	(mouseleave)="dimension('200px', '200px')"
+	(mouseenter)="dimension('400px', '400px')"
+	(mouseenter)="in = !in"
+	(mouseleave)="in = !in"
+>
+	<p *ngIf="in">Passe le curseur sur moi</p>
+	<p *ngIf="!in">Place le curseur aileurs</p>
+</div>
+
+<!-- INTERPOLATION -->
+
+<h2>c)</h2>
+
+<p>{{ phrase }}</p>

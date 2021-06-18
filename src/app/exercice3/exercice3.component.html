@@ -1,0 +1,8 @@
+<h1><u>Exercice 3</u></h1>
+
+<div [ngClass]="{ status: 'set' }">
+	<button (click)="set = !set">Oseras-tu ?</button>
+</div>
+
+<p *ngIf="set">p1</p>
+<p *ngIf="!set">p2</p>
